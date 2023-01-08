@@ -1,4 +1,4 @@
-package com.pereira.restkotlinAPI.interfaces
+package com.pereira.restkotlinAPI.interfaces.incoming
 
 import com.pereira.restkotlinAPI.domain.*
 import org.springframework.http.HttpStatus

@@ -1,10 +1,10 @@
-package com.pereira.restkotlinAPI.mapping
+package com.pereira.restkotlinAPI.interfaces.incoming.mapping
 
 import com.pereira.restkotlinAPI.domain.PassengerRepository
 import com.pereira.restkotlinAPI.domain.TravelRequest
-import com.pereira.restkotlinAPI.interfaces.PassengerAPI
-import com.pereira.restkotlinAPI.interfaces.TravelRequestInput
-import com.pereira.restkotlinAPI.interfaces.TravelRequestOutput
+import com.pereira.restkotlinAPI.interfaces.incoming.PassengerAPI
+import com.pereira.restkotlinAPI.interfaces.incoming.TravelRequestInput
+import com.pereira.restkotlinAPI.interfaces.incoming.TravelRequestOutput
 import org.springframework.hateoas.EntityModel
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder
 import org.springframework.http.HttpStatus
@@ -48,4 +48,6 @@ class TravelRequestMapper(
         return EntityModel.of(output, passengerLink)
     }
 
-}
+    fun buildOutputModel(requests: List<TravelRequest>) = requests.map { buildOutputModel(it, map(it)) }
+    }
+

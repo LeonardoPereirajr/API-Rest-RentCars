@@ -23,6 +23,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.hateoas:spring-hateoas")
+	implementation("com.jayway.jsonpath:json-path")
 	runtimeOnly("com.h2database:h2")
 //	runtimeOnly("mysql:mysql-connector-java")
 //	implementation("mysql:mysql-connector-java:8.0.15")
