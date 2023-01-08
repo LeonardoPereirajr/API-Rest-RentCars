@@ -1,0 +1,9 @@
+CREATE TABLE driver(
+	id int auto_increment primary key,
+    name varchar(255) not null,
+    birthday date not null
+);
+INSERT INTO DRIVER(ID, BIRTH_DATE, NAME)
+VALUES (1, '1986-08-18', 'Alexandre Saudate');
+INSERT INTO DRIVER(ID, BIRTH_DATE, NAME)
+VALUES (2, '1981-06-03', 'McLOVIN');
