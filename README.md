@@ -39,3 +39,5 @@ possamos ter mais segurança ao expor APIs públicas.
 ![image](https://user-images.githubusercontent.com/30580018/200132319-2dfb32ea-c112-4609-91eb-58ea7735e010.png) #vitrinedev
 
 ## Detalhes do projeto
+
+Base de estudo: Livro APIs REST em Kotlin - Seus serviços prontos para o mundo Real - Alexandre Saudate
