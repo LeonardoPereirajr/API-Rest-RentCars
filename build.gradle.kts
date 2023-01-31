@@ -14,6 +14,9 @@ java.sourceCompatibility = JavaVersion.VERSION_11
 
 repositories {
 	mavenCentral()
+	maven {
+		url = uri("https://maven.google.com")
+	}
 }
 
 dependencies {
@@ -24,11 +27,13 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.hateoas:spring-hateoas")
 	implementation("com.jayway.jsonpath:json-path")
+	implementation("com.google.maps:google-maps-services:2.1.2")
 	runtimeOnly("com.h2database:h2")
 //	runtimeOnly("mysql:mysql-connector-java")
 //	implementation("mysql:mysql-connector-java:8.0.15")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("io.rest-assured:spring-mock-mvc:4.3.2")
 }
 
 tasks.withType<KotlinCompile> {
