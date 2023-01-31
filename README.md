@@ -36,7 +36,6 @@ possamos ter mais segurança ao expor APIs públicas.
 | :fire: Desafio     | https://url-do-desafio.com.br
 
 <!-- Inserir imagem com a #vitrinedev ao final do link -->
-![image](https://user-images.githubusercontent.com/30580018/200132319-2dfb32ea-c112-4609-91eb-58ea7735e010.png) #vitrinedev
 
 ## Detalhes do projeto
 
